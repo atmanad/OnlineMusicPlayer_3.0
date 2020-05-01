@@ -1,141 +1,299 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>MUSIC</title>
-<link rel="stylesheet" href="front1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="front1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body  style="background-image:url('images/musics.jpg');" >
 
-<h1><div >
-MUSIC
-<br>Jo dil chahe</br>
+<body style="background-image:url('images/musis.jpg');" class="example">
+    <div class="topnav">
+        <a class="active"><span style="font-family:Aldrich; color: red; font-size: 35px;">MUSIC</span>&nbsp;
+            <span style="font-family: cursive; font-size: 50px;">Jo dil chahe</span>
 
-</div></h1>
+        </a>
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <p class="caption">Categories</p>
 
-<div class="bkc" align=center>
-<form >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="thumbnail">
+                    <a href=""> <img src="/images/israel-palacio-Y20JJ_ddy9M-unsplash.jpg" alt="">
+                        <div class="caption2">Party</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail">
+                    <a href=""> <img src="/images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg" alt="" height="160"
+                            width="170">
+                        <div class="caption2">Romantic</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail">
+                    <a href=""><img src="/images/freestocks.jpg" alt="" height="200" width="170">
+                        <div class="caption2">Work out</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail">
+                    <a href=""><img src="/images/josh-sorenson-MjIMc6uhwrE-unsplash.jpg" alt="" style="width: 100">
+                        <div class="caption2">Remix</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail">
+                    <a href=""><img src="/images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg" alt="" style="width: 100">
+                        <div class="caption2">Sleep</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="thumbnail" class="size1>
+                    <a href = ""> <img src=" /images/matthieu-a-bXjqPckmLD8-unsplash.jpg" alt="">
+                    <div class="caption2">Kids</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="caption">On Repeat Mode</h1>
 
-<div class="mkc">
- <img src="search.png" width="30px" onclick="search();"/>
-<input required type="text"  placeholder="SEARCH" size="100" />
+    <div class="sks example">
+        <table height="30%" width="100%">
+            <tr>
+                <th class="gap"><a href=""><img src="/images/sergio.jpg" height="150" width="150" onclick="loadSong();">
+                        <figcaption>Brown Rang</figcaption>
 
-	 </div></form>
-</div>
-<h1><div>
-CATEGORY
-</div></h1>
+                </th>
+                <th class="gap"><img src="/images/alexandre.jpg" height="150" width="150">
+                    <figcaption>Horn Ok Please</figcaption>
+                </th>
+                <th class="gap"><img src="images/han.jpg" height="150" width="150">
+                    <figcaption>Dheeme Dheeme</figcaption>
+                </th>
+                </th>
+                <th class="gap"><img src="/images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg" height="150" width="150">
+                    <figcaption>Duniya</figcaption>
+                </th>
 
-<div class="sks">
-<table bgcolor="#eee8e8" height="30%" width="100%" >
-<figure>
-<tr>
-<th><a href="romantic.html"><img src="87-512.png" height="150" width="150"/><figcaption>Romantic songs</figure></a></th>
-<th><a href="party.html"><img src="1033x640q=90_Tom_Doms_20181021__Z2A8026_-_Copy_179165_179169_640x520_90_1_0_c.jpg" height="150" width="150"><figcaption>Party songs</figcaption></th>
-<th><a href="sad.html"><img src="3-512.png" height="150" width="150" ><figcaption>Sad songs</th>
-<th><a href="english.html"><img src="unnamed.png" height="150" width="150" ><figcaption>English songs</th>
-</tr>
-</figure>
-</table>
-</div>
-<h1><div >
-Trending Now
-</div></h1>
+                <th class="gap"><img src="/images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg" height="150" width="150">
+                    <figcaption>Pal Pal dil k paas</figcaption>
+                </th>
+                <th class="gap"><img src="/images/mink-mingle-HRyjETL87Gg-unsplash.jpg" height="150" width="150">
+                    <figcaption>Tuhi hai</figcaption>
+                </th>
+                <th class="gap"><img src="/images/oscar-keys-ojVMh1QTVGY-unsplash.jpg" height="150" width="150">
+                    <figcaption>Odhani Ude Ude</figcaption>
+                </th>
+                <th class="gap"><img src="/images/spen.jpg" height="150" width="150">
+                    <figcaption>Satisfya</figcaption>
+                </th>
 
-<div class="sks">
-<table bgcolor="#eee8e8" height="30%" width="100%" >
-<figure>
-<tr>
-<th><a href="new 1.html"><img src="118596-duniyaa-luka-chuppi-mp3-song-300.jpg" height="150" width="150" onclick="loadSong();"><figcaption>duniyaa-luka chuppi</figure></th>
-<th><img src="blur-close-up-colors-165776.jpg" height="150" width="150"><figcaption>Horn Ok Please<input type="checkbox"  name="remember"></th>
-<th><img src="agriculture-close-up-delicious-214168.jpg" height="150" width="150"><figcaption>Dheeme Dheeme<input type="checkbox"  name="remember"></th>
-<th><img src="apples-close-up-delicious-209339.jpg" height="150" width="150"><figcaption>Duniya<input type="checkbox"  name="remember"></th>
+                <th class="gap"><img src="fresh-mango-500x500.jpg" height="150" width="150">
+                    <figcaption>Imaginary</figcaption>
+                </th>
+                <th class="gap"><img src="citrus-delicious-food-35063 (1).jpg" height="150" width="150">
+                    <figcaption>Party</figcaption>
+                </th>
+                <th class="gap"><img src="close-up-delicious-food-175767.jpg" height="150" width="150">
+                    <figcaption>Tareefan</figcaption>
+                </th>
+                <th class="gap"><img src="food-fruits-glass-36736.jpg" height="150" width="150">
+                    <figcaption>Move</figcaption>
+                </th>
 
-<th><img src="bananas-clipping-close-up-61127.jpg" height="150" width="150"><figcaption>Pal Pal dil k paas<input type="checkbox"  name="remember"></th>
-<th><img src="berries-food-fresh-59999.jpg" height="150" width="150"><figcaption>Tuhi hai<input type="checkbox"  name="remember"></th>
-<th><img src="berry-bowl-of-fruit-cherries-1178610.jpg" height="150" width="150"><figcaption>Odhani Ude Ude<input type="checkbox"  name="remember"></th>
-<th><img src="black-citrus-citrus-fruit-952360.jpg" height="150" width="150"><figcaption>Satisfya<input type="checkbox" name="remember"></th>
+                <th class="gap"><img src="food-fruits-green-59830.jpg" height="150" width="150">
+                    <figcaption>Genga phool</figcaption>
+                </th>
+                <th class="gap"><img src="grapes.jpg" height="150" width="150">
+                    <figcaption>Ghajni</figcaption>
+                </th>
 
-<th><img src="fresh-mango-500x500.jpg" height="150" width="150"><figcaption>Imaginary<input type="checkbox"  name="remember"></th>
-<th><img src="citrus-delicious-food-35063 (1).jpg" height="150" width="150"><figcaption>Party<input type="checkbox"  name="remember"></th>
-<th><img src="close-up-delicious-food-175767.jpg" height="150" width="150"><figcaption>Tareefan<input type="checkbox"  name="remember"></th>
-<th><img src="food-fruits-glass-36736.jpg" height="150" width="150"><figcaption>Strawberries $180<input type="checkbox"  name="remember"></th>
+                <th class="gap"><img src="pomegranate.jpg" height="150" width="150">
+                    <figcaption>Senorita</figcaption>
+                </th>
+                <th class="gap"><img src="482728017-612x612.jpg" height="150" width="150">
+                    <figcaption>Bob Marley</figcaption>
+                </th>
+            </tr>
 
-<th><img src="food-fruits-green-59830.jpg" height="150" width="150"><figcaption>Watermelon $60<input type="checkbox"  name="remember"></th>
-<th><img src="grapes.jpg" height="150" width="150"><figcaption>Grapes $45<input type="checkbox"  name="remember"></th>
+        </table>
+    </div>
 
-<th><img src="pomegranate.jpg" height="150" width="150"><figcaption>pomegranate $90<input type="checkbox"  name="remember"></th>
-<th><img src="482728017-612x612.jpg" height="150" width="150"><figcaption>Kiwi $450<input type="checkbox"  name="remember"></th>
-</tr>
-</figure>
-</table>
-</div>
+    <p class="caption">
 
-<h1><div >
-NEW SONGS
-</div></h1>
+        New Songs
 
-<div class="sks">
-<table bgcolor="#eee8e8" height="30%" width="100%" >
-<figure>
-<tr>
-<th><img src="abundance-berries-blueberries-1153655.jpg" height="150" width="150"><figcaption>Yaad piya ki</figure></th>
-<th><img src="blur-close-up-colors-165776.jpg" height="150" width="150"><figcaption>Intezar<input type="checkbox"  name="remember"></th>
-<th><img src="agriculture-close-up-delicious-214168.jpg" height="150" width="150"><figcaption>Walla Walla<input type="checkbox"  name="remember"></th>
-<th><img src="apples-close-up-delicious-209339.jpg" height="150" width="150"><figcaption>Raghupati Raghav<input type="checkbox"  name="remember"></th>
+    </p>
 
-<th><img src="bananas-clipping-close-up-61127.jpg" height="150" width="150"><figcaption>Ruka hoon<input type="checkbox"  name="remember"></th>
-<th><img src="berries-food-fresh-59999.jpg" height="150" width="150"><figcaption>Upar niche<input type="checkbox"  name="remember"></th>
-<th><img src="berry-bowl-of-fruit-cherries-1178610.jpg" height="150" width="150"><figcaption>Habibi ke nai<input type="checkbox"  name="remember"></th>
-<th><img src="black-citrus-citrus-fruit-952360.jpg" height="150" width="150"><figcaption>Humein bharat<input type="checkbox" name="remember"></th>
+    <div class="sks example">
+        <table height="30%" width="100%">
 
-<th><img src="fresh-mango-500x500.jpg" height="150" width="150"><figcaption>Mango $120<input type="checkbox"  name="remember"></th>
-<th><img src="citrus-delicious-food-35063 (1).jpg" height="150" width="150"><figcaption>Orange $80<input type="checkbox"  name="remember"></th>
-<th><img src="close-up-delicious-food-175767.jpg" height="150" width="150"><figcaption>Guava $45<input type="checkbox"  name="remember"></th>
-<th><img src="food-fruits-glass-36736.jpg" height="150" width="150"><figcaption>Strawberries $180<input type="checkbox"  name="remember"></th>
+            <tr>
+                <th class="gap"><img src="abundance-berries-blueberries-1153655.jpg" height="150" width="150">
+                    <figcaption>Yaad piya ki</figcaption>
+                </th>
+                <th class="gap"><img src="blur-close-up-colors-165776.jpg" height="150" width="150">
+                    <figcaption>Intezar</figcaption>
+                </th>
+                <th class="gap"><img src="agriculture-close-up-delicious-214168.jpg" height="150" width="150">
+                    <figcaption>Walla Walla</figcaption>
+                </th>
+                <th class="gap"><img src="apples-close-up-delicious-209339.jpg" height="150" width="150">
+                    <figcaption>Raghupati Raghav</figcaption>
+                </th>
 
-<th><img src="food-fruits-green-59830.jpg" height="150" width="150"><figcaption>Watermelon $60<input type="checkbox"  name="remember"></th>
-<th><img src="grapes.jpg" height="150" width="150"><figcaption>Grapes $45<input type="checkbox"  name="remember"></th>
+                <th class="gap"><img src="bananas-clipping-close-up-61127.jpg" height="150" width="150">
+                    <figcaption>Ruka hoon</figcaption>
+                </th>
+                <th class="gap"><img src="berries-food-fresh-59999.jpg" height="150" width="150">
+                    <figcaption>Upar niche</figcaption>
+                </th>
+                <th class="gap"><img src="berry-bowl-of-fruit-cherries-1178610.jpg" height="150" width="150">
+                    <figcaption>Habibi ke nai</figcaption>
+                </th>
+                <th class="gap"><img src="black-citrus-citrus-fruit-952360.jpg" height="150" width="150">
+                    <figcaption>Humein bharat</figcaption>
+                </th>
 
-<th><img src="pomegranate.jpg" height="150" width="150"><figcaption>pomegranate $90<input type="checkbox"  name="remember"></th>
-<th><img src="482728017-612x612.jpg" height="150" width="150"><figcaption>Kiwi $450<input type="checkbox"  name="remember"></th>
-</tr>
-</figure>
-</table>
-</div>
+                <th class="gap"><img src="fresh-mango-500x500.jpg" height="150" width="150">
+                    <figcaption>Mango $120</figcaption>
+                </th>
+                <th class="gap"><img src="citrus-delicious-food-35063 (1).jpg" height="150" width="150">
+                    <figcaption>Orange $80</figcaption>
+                </th>
+                <th class="gap"><img src="close-up-delicious-food-175767.jpg" height="150" width="150">
+                    <figcaption>Guava $45</figcaption>
+                </th>
+                <th class="gap"><img src="food-fruits-glass-36736.jpg" height="150" width="150">
+                    <figcaption>Strawberries $180</figcaption>
+                </th>
+
+                <th class="gap"><img src="food-fruits-green-59830.jpg" height="150" width="150">
+                    <figcaption>Watermelon $60</figcaption>
+                </th>
+                <th class="gap"><img src="grapes.jpg" height="150" width="150">
+                    <figcaption>Grapes $45</figcaption>
+                </th>
+
+                <th class="gap"><img src="pomegranate.jpg" height="150" width="150">
+                    <figcaption>pomegranate $90</figcaption>
+                </th>
+                <th class="gap"><img src="482728017-612x612.jpg" height="150" width="150">
+                    <figcaption>Kiwi $450</figcaption>
+                </th>
+            </tr>
+            </figure>
+        </table>
+    </div>
 
 
-<h1><div >
-OLD SONGS
-</div></h1>
+    <p class="caption">
 
-<div class="sks">
-<table bgcolor="#eee8e8" height="30%" width="100%" >
-<figure>
-<tr>
-<th><img src="abundance-berries-blueberries-1153655.jpg" height="150" width="150"><figcaption>Pyaar hua</figure></th>
-<th><img src="blur-close-up-colors-165776.jpg" height="150" width="150"><figcaption>Uden jab jab Zulfen Teri<input type="checkbox"  name="remember"></th>
-<th><img src="agriculture-close-up-delicious-214168.jpg" height="150" width="150"><figcaption>Custard Apple $35<input type="checkbox"  name="remember"></th>
-<th><img src="apples-close-up-delicious-209339.jpg" height="150" width="150"><figcaption>Aaiye Meharban<input type="checkbox"  name="remember"></th>
+        90's Retro
 
-<th><img src="bananas-clipping-close-up-61127.jpg" height="150" width="150"><figcaption>kis ki Muskuraton pe<input type="checkbox"  name="remember"></th>
-<th><img src="berries-food-fresh-59999.jpg" height="150" width="150"><figcaption><input type="checkbox"  name="remember"></th>
-<th><img src="berry-bowl-of-fruit-cherries-1178610.jpg" height="150" width="150"><figcaption>Cherries $72<input type="checkbox"  name="remember"></th>
-<th><img src="black-citrus-citrus-fruit-952360.jpg" height="150" width="150"><figcaption>Lemon $40<input type="checkbox" name="remember"></th>
+    </p>
 
-<th><img src="fresh-mango-500x500.jpg" height="150" width="150"><figcaption>Mango $120<input type="checkbox"  name="remember"></th>
-<th><img src="citrus-delicious-food-35063 (1).jpg" height="150" width="150"><figcaption>Orange $80<input type="checkbox"  name="remember"></th>
-<th><img src="close-up-delicious-food-175767.jpg" height="150" width="150"><figcaption>Guava $45<input type="checkbox"  name="remember"></th>
-<th><img src="food-fruits-glass-36736.jpg" height="150" width="150"><figcaption>Strawberries $180<input type="checkbox"  name="remember"></th>
+    <div class="sks example">
+        <table height="30%" width="100%">
 
-<th><img src="food-fruits-green-59830.jpg" height="150" width="150"><figcaption>Watermelon $60<input type="checkbox"  name="remember"></th>
-<th><img src="grapes.jpg" height="150" width="150"><figcaption>Grapes $45<input type="checkbox"  name="remember"></th>
+            <tr>
+                <th class="gap"><img src="abundance-berries-blueberries-1153655.jpg" height="150" width="150">
+                    <figcaption>Pyaar hua</figcaption>
 
-<th><img src="pomegranate.jpg" height="150" width="150"><figcaption>pomegranate $90<input type="checkbox"  name="remember"></th>
-<th><img src="482728017-612x612.jpg" height="150" width="150"><figcaption>Kiwi $450<input type="checkbox"  name="remember"></th>
-</tr>
-</figure>
-</table>
-</div>
-	<script type="text/javascript" src="new 3.js"></script>
+                </th>
+                <th class="gap"><img src="blur-close-up-colors-165776.jpg" height="150" width="150">
+                    <figcaption>Uden jab Zulfen</figcaption>
+                </th>
+                <th class="gap"><img src="agriculture-close-up-delicious-214168.jpg" height="150" width="150">
+                    <figcaption>Besharam</figcaption>
+                </th>
+                <th class="gap"><img src="apples-close-up-delicious-209339.jpg" height="150" width="150">
+                    <figcaption>Aaiye Meharban</figcaption>
+                </th>
+
+                <th class="gap"><img src="bananas-clipping-close-up-61127.jpg" height="150" width="150">
+                    <figcaption>kis ki Muskuraton pe</figcaption>
+                </th>
+                <th class="gap"><img src="berries-food-fresh-59999.jpg" height="150" width="150">
+                    <figcaption>Baby</figcaption>
+                </th>
+                <th class="gap"><img src="berry-bowl-of-fruit-cherries-1178610.jpg" height="150" width="150">
+                    <figcaption>Na Na Na Na</figcaption>
+                </th>
+                <th class="gap"><img src="black-citrus-citrus-fruit-952360.jpg" height="150" width="150">
+                    <figcaption>Bewafa</figcaption>
+                </th>
+
+                <th class="gap"><img src="fresh-mango-500x500.jpg" height="150" width="150">
+                    <figcaption>Kajal</figcaption>
+                </th>
+                <th class="gap"><img src="citrus-delicious-food-35063 (1).jpg" height="150" width="150">
+                    <figcaption>Illegal Weapon</figcaption>
+                </th>
+                <th class="gap"><img src="close-up-delicious-food-175767.jpg" height="150" width="150">
+                    <figcaption>Dus bahane</figcaption>
+                </th>
+                <th class="gap"><img src="food-fruits-glass-36736.jpg" height="150" width="150">
+                    <figcaption>Strawberries $180</figcaption>
+                </th>
+
+                <th class="gap"><img src="food-fruits-green-59830.jpg" height="150" width="150">
+                    <figcaption>Watermelon $60</figcaption>
+                </th>
+                <th class="gap"><img src="grapes.jpg" height="150" width="150">
+                    <figcaption>Grapes $45</figcaption>
+                </th>
+
+                <th class="gap"><img src="pomegranate.jpg" height="150" width="150">
+                    <figcaption>pomegranate $90</figcaption>
+                </th>
+                <th class="gap"><img src="482728017-612x612.jpg" height="150" width="150">
+                    <figcaption>Kiwi $450</figcaption>
+                </th>
+            </tr>
+            </figure>
+        </table>
+    </div>
+    <script type="text/javascript" src="new 3.js"></script>
+    <footer>
+        <ol>
+            <li><a><i class="fa fa-facebook-official"></i></a></li>
+            <li><a><i class="fa fa-twitter"></i></a></li>
+            <li><a><i class="fa fa-linkedin"></i></a></li>
+            <li><a><i class="fa fa-google-plus"></i></a></li>
+
+        </ol>
+        <div class="foo">
+            <a href="#" class="tk">About Us</a>
+            <a href="#" class="tk">Advertise With Us</a>
+            <a href="#" class="tk">Contact Us</a>
+            <a href="#" class="tk">Products</a>
+        </div>
+
+    </footer>
 
 </body>
+
 </html>

@@ -1,45 +1,175 @@
-<style type="text/css">
+body {
+  background: #f1e7e7;
+}
 
+button {
+  background-color: #4caf50;
+
+  border-color: #4caf50;
+  color: red;
+  display: inline-block;
+}
+
+.xyz {
+  background: #d33a1a;
+}
+
+.myclass {
+  width: 600px;
+  height: 600px;
+}
+
+.bkc {
+  width: 100px;
+  height: 50px;
+}
+
+.sks {
+  overflow-y: hidden;
+}
+.mkc {
+  width: max-content;
+  height: 50px;
+  white-space: nowrap;
+  background: black;
+}
+a.one:link {
+  font-family: sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+a.one:visited {
+  text-decoration: none;
+  color: black;
+}
+a.one:hover {
+  color: blue;
+  text-decoration: none;
+}
+.example {
+  overflow-y: scroll;
+  overflow-x: scroll; /* Add the ability to scroll */
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+.gap{
+	padding: 8px;
+}
+
+.caption{
+	font-family: Aldrich;
+	font-size: 35px;
+	padding-left: 20px;
+}
+.caption2{
+	font-family: monospace;
+	font-weight: 900;
+
+}
+.topnav{
+	overflow: hidden;
+	background-color: mintcream;
+}
 body{
-background: #f1e7e7;
+	margin: 0;
+	padding: 0;
 }
 
-button{
-background-color:#4CAF50;
+.topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  .topnav a:hover {
+	text-decoration: none;
+  }
+  
+  .topnav .search-container {
+	float: right;
+  }
+  
+  .topnav input[type=text] {
+	padding: 6px;
+	margin-top: 15px;
+	font-size: 17px;
+  }
+  
+  .topnav .search-container button {
+	float: right;
+	padding: 6px 15px;
+	margin-top: 15px;
+	margin-right: 50px;
+	background: #ddd;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+	background: #ccc;
+  }
+  .size1{
+	  height: 200;
+	  width: 200;
+  }
+ footer {
+            width: 100%;
+            height: 90px;
+            margin: auto;
+            background: mintcream;
+            bottom: 0;
+            position: relative;
 
-border-color:#4CAF50;
-color:red
-display:inline-block;
-}
+        }
 
-.xyz{
-	background:#D33A1A;
-	
-	
-}
+        ol {
+            display: flex;
+            position: relative;
+            top: 30%;
+            left: 80%;
+            transform: translate(-40%, -50%);
 
-.myclass{
-	width: 600px;
-height: 600px:
-}
+        }
 
-.bkc{
-	width: 400px;
-	height:50px;
-	
+        ol li {
+
+            list-style: none;
 
 
-	
-}
+        }
 
-.sks{
-	overflow-y: hidden;
+        ol li a {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            margin: 0 10px;
+            display: block;
+            border-radius: 50%;
+            border: 3px solid #fff;
 
-}
-.mkc{
-		width: 1370px;
-	height:50px;
-		white-space: nowrap;
-				background:white;
-	
-}
+        }
+
+        .foo {
+
+            position: relative;
+            top: 20%;
+            left: 30%;
+
+        }
+
+        .tk {
+            color: black;
+            font-family: Arial;
+            text-decoration: none;
+            margin: 0px 20px;
+        }
