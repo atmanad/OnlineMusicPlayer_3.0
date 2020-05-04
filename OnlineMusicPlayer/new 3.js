@@ -1,4 +1,5 @@
-var songs = ["Duniyaa - Luka Chuppi.mp3",
+var songs = [
+  "Duniyaa - Luka Chuppi.mp3",
   "Con Calma - [musiqpool].mp3",
   "Galat Baat Hai.mp3",
   "Kabhi Jo Baadal Barse (Female)-Jackpot.mp3",
@@ -14,15 +15,14 @@ var songs = ["Duniyaa - Luka Chuppi.mp3",
   "Love Dose   Yo Yo Honey Singh - [musiqpool]",
   "Lazy Lamhe - [musiqpool]",
   "Besharam - Tere Mohalle.mp3",
-
 ];
 
-var songTitle = document.getElementById('songTitle');
-var songSlider = document.getElementById('songSlider');
-var currentTime = document.getElementById('currentTime');
-var duration = document.getElementById('duration');
-var volumeSlider = document.getElementById('volumeSlider');
-var nextSongTitle = document.getElementById('nextSongTitle');
+var songTitle = document.getElementById("songTitle");
+var songSlider = document.getElementById("songSlider");
+var currentTime = document.getElementById("currentTime");
+var duration = document.getElementById("duration");
+var volumeSlider = document.getElementById("volumeSlider");
+var nextSongTitle = document.getElementById("nextSongTitle");
 
 var song = new Audio();
 var currentSong = 0;
@@ -31,11 +31,14 @@ window.onload = loadSong();
 
 function loadSong() {
   song.src = "songs/" + songs[currentSong];
-  songTitle.textContent = (currentSong + 1) + ". " + songs[currentSong];
-  nextSongTitle.innerHTML = "<b>Next Song: </b>" + songs[currentSong + 1 % songs.length];
+
+  songTitle.textContent = /* currentSong + 1 + ". " +*/ songs[currentSong];
+  nextSongTitle.innerHTML =
+    "<b>Next Song: </b>" + songs[currentSong + (1 % songs.length)];
   song.playbackRate = 1;
   song.volume = volumeSlider.value;
   song.play();
+
   setTimeout(showDuration, 1000);
 }
 
@@ -53,9 +56,9 @@ function updateSongSlider() {
 function convertTime(secs) {
   var min = Math.floor(secs / 60);
   var sec = secs % 60;
-  min = (min < 10) ? "0" + min : min;
-  sec = (sec < 10) ? "0" + sec : sec;
-  return (min + ":" + sec);
+  min = min < 10 ? "0" + min : min;
+  sec = sec < 10 ? "0" + sec : sec;
+  return min + ":" + sec;
 }
 
 function showDuration() {
@@ -65,23 +68,23 @@ function showDuration() {
 }
 
 function playOrPauseSong() {
-
   if (song.paused) {
     song.play();
-
+    document.getElementById("pp").src = "images/pause.png";
   } else {
     song.pause();
+    document.getElementById("pp").src = "images/play.png";
   }
 }
 
 function next() {
-  currentSong = currentSong + 1 % songs.length;
+  currentSong = currentSong + (1 % songs.length);
   loadSong();
 }
 
 function previous() {
   currentSong--;
-  currentSong = (currentSong < 0) ? songs.length - 1 : currentSong;
+  currentSong = currentSong < 0 ? songs.length - 1 : currentSong;
   loadSong();
 }
 

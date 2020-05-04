@@ -6,10 +6,10 @@
     <link rel="stylesheet" type="text/css" href="songs.css">
 </head>
 
-<body style="background-image: url('/images/musics.jpg');">
+<body style="background-image: url('images/musics.jpg');">
     <div class="audio-player-cont" align=center>
         <div class="image1" background=align="center">
-            <img src="/images/music.jpg" width="300px">
+            <img src="images/music.jpg" width="300px">
         </div>
         <div class="player">
             <marquee>
@@ -23,7 +23,7 @@
             <div class="controllers">
                 <img src="images/previous.png" width="30px" onclick="previous();" />
                 <img src="images/backward.png" width="30px" onclick="backward();" />
-                <img src="images/pause.png" width="40px" onclick="playOrPauseSong ();" />
+                <img id="pp" src="images/pause.png" width="40px" onclick="playOrPauseSong ();" />
                 <img src="images/forward.png" width="30px" onclick="forward();" />
                 <img src="images/next.png" width="30px" onclick="next();" />
                 <div align=right>
@@ -71,7 +71,7 @@
 
         function loadSong() {
             song.src = "songs/" + songs[currentSong];
-            songTitle.textContent = (currentSong + 1) + ". " + songs[currentSong];
+            songTitle.textContent = songs[currentSong];
             nextSongTitle.innerHTML = "<b>Next Song: </b>" + songs[currentSong + 1 % songs.length];
             song.playbackRate = 1;
             song.volume = volumeSlider.value;
@@ -111,10 +111,12 @@
 
             if (song.paused) {
                 song.play();
+                document.getElementById("pp").src = "images/pause.png";
 
             }
             else {
                 song.pause();
+                document.getElementById("pp").src = "images/play.png";
             }
         }
 
