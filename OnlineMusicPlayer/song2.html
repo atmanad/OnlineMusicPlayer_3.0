@@ -8,7 +8,7 @@
 
 <body style="background-image: url('./images/musics.jpg');">
 	<div class="audio-player-cont" align=center>
-		<div class="image1" background=align="center">
+		<div class="image1" background=align="center" id="img">
 			<img src="images/music.jpg" width="300px">
 		</div>
 		<div class="player">
@@ -78,7 +78,7 @@
 			song.play();
 			setTimeout(showDuration, 1000);
 		}
-		
+
 		setInterval(updateSongSlider, 1000);
 
 		function updateSongSlider() {
@@ -109,11 +109,13 @@
 			if (song.paused) {
 				song.play();
 				document.getElementById("pp").src = "images/pause.png";
+				pp.style.transform="scale(1)";
 
 			}
 			else {
 				song.pause();
 				document.getElementById("pp").src = "images/play.png";
+				pp.style.transform = "scale(1.3)";
 			}
 		}
 

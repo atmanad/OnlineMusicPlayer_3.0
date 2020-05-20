@@ -1,14 +1,6 @@
 body {
   background: #f1e7e7;
 }
-
-/*button {
-  background-color: #4caf50;
-  border-color: #4caf50;
-  color: red;
-  display: inline-block;
-}*/
-
 .xyz {
   background: #d33a1a;
 }
@@ -110,28 +102,25 @@ body {
   padding: 6px;
   margin-top: 25px;
   font-size: 17px;
+  margin-right: 100px;
 }
 
 .topnav .search-container button {
   float: right;
   padding: 6px 15px;
   margin-top: 25px;
-  margin-right: 50px;
-  background: #ddd;
+  
+  background: #010317;
   font-size: 20px;
-  border: none;
+  border: 0.1px solid white;
   cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
 }
 
 center {
   width: 100%;
   height: 110px;
   margin: auto;
-  background: #06021f;
+  background: #010317;
   bottom: 0;
   position: relative;
   overflow: hidden;
@@ -153,14 +142,14 @@ ol li {
 ol li a {
   width: 40px;
   height: 40px;
-  background: #fff;
+  /*background:#010317;*/
   text-align: center;
   line-height: 40px;
   font-size: 20px;
   margin: 0 20px;
   display: block;
   border-radius: 50%;
-  border: 3px solid #fff;
+  /*border: 1px solid white;*/
 }
 
 .footer {
@@ -192,4 +181,11 @@ th {
   border-collapse: separate;
   border-spacing: 10px;
   margin-bottom: 40px;
+}
+.fa{
+color: white;
+}
+.img-size{
+  height: 150px;
+  width: 150px;
 }
