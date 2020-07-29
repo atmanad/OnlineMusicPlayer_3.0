@@ -1,5 +1,7 @@
 body {
-  background: #f1e7e7;
+  background-color:#010317;
+  margin: 0;
+  padding: 0;
 }
 .xyz {
   background: #d33a1a;
@@ -64,20 +66,9 @@ a.one:hover {
   color: white;
 }
 
-.caption2 {
-  font-family: monospace;
-  font-weight: 900;
-  color: black;
-}
-
 .topnav {
   overflow: hidden;
   background-color: white;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 .topnav a {
@@ -94,74 +85,27 @@ body {
   text-decoration: none;
 }
 
-.topnav .search-container {
-  float: right;
-}
-
 .topnav input[type="text"] {
   padding: 6px;
   margin-top: 25px;
   font-size: 17px;
-  margin-right: 100px;
+  margin-right: 55px;
+  float:right;
 }
 
 .topnav .search-container button {
   float: right;
   padding: 6px 15px;
-  margin-top: 25px;
-  
   background: #010317;
   font-size: 20px;
   border: 0.1px solid white;
   cursor: pointer;
 }
 
-center {
-  width: 100%;
-  height: 110px;
-  margin: auto;
-  background: #010317;
-  bottom: 0;
-  position: relative;
-  overflow: hidden;
-  border-top: 0.5px solid white;
-}
-
-ol {
-  display: flex;
-  position: relative;
-  top: 35%;
-  left: 75%;
-  transform: translate(-40%, -50%);
-}
-
-ol li {
-  list-style: none;
-}
-
-ol li a {
-  width: 40px;
-  height: 40px;
-  /*background:#010317;*/
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-  margin: 0 20px;
-  display: block;
-  border-radius: 50%;
-  /*border: 1px solid white;*/
-}
-
-.footer {
-  position: relative;
-  top: 20px;
-  left: 20px;
-}
 a.footerlink:link {
   color: white;
   font-family: 'Source Code Pro', monospace;
   text-decoration: none;
-  margin-right: 10px;
   font-size: 20px;
   font-weight: 200;
   margin-right: 40px;
@@ -181,11 +125,12 @@ th {
 .fa{
 color: white;
 }
-/* .img-size{
-  height: 150px;
-  width: 150px;
-} */
+
 .image img{
   height: 150px;
   width: 150px;
+}
+.table:hover{
+  overflow-y: hidden;
+  overflow-x: scroll;
 }

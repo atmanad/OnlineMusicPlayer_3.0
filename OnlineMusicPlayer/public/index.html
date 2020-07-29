@@ -5,10 +5,8 @@
   <title>Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
   <!--google fonts-->
   <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
@@ -16,81 +14,65 @@
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <script data-ad-client="ca-pub-1422120731046186" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script async defer src="search.js"></script>
 </head>
 
-<body style="background-color:#010317;" class="example" id="kk">
-  <div class="topnav" style="background-color:#010317;border-bottom: 0.5px solid white;">
-    <a class="active"><span style="font-family:Aldrich; color: red; font-size: 35px;">MUSIC</span>&nbsp;
-      <span style="font-family: cursive; font-size: 50px;color: white;">Jo dil chahe</span>
-    </a>
-    <div class="search-container">
-      <div>
-        <input type="text" placeholder="Search.." id="search" onkeyup="searchFunc()">
+<body class="example" id="kk">
+  <div class="container-fluid">
+    <div class="topnav" style="background-color:#010317;border-bottom: 0.5px solid white;">
+      <a class="active"><span style="font-family:Aldrich; color: red; font-size: 35px;">MUSIC</span>&nbsp;
+        <span style="font-family:Comic Sans MS, cursive, sans-serif; font-size: 50px;color: white; font-weight: lighter;">Dil chahe</span>
+      </a>
+      <div class="search-container">
+        <div>
+          <input type="text" placeholder="Search.." id="search" onkeyup="searchFunc()">
+        </div>
       </div>
     </div>
   </div>
+
   <p class="caption">Categories</p>
 
-  <div class="container-fluid">
+  <div class="container-fluid mb-2">
     <div class="row">
-      <div class="col-md-2">
-        <div class="thumbnail">
-          <a href="categories/party.html" target="_blank" class="one"><img
-              src="images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg" alt="">
-            <div class="caption2">Party</div>
-          </a>
-        </div>
+      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+        <a href="categories/party.html" target="_blank" class="one">
+          <img src="images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg" class="img-fluid rounded" alt="">
+          <div class="text-light">Party</div>
+        </a>
       </div>
-      <div class="col-md-2">
-        <div class="thumbnail">
-          <a ref="categories/romance.html" class="one" target="_blank"><img
-              src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg" alt="" height="160" width="170">
-            <div class="caption2">Romance</div>
-          </a>
-        </div>
+      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+        <a ref="categories/romance.html" class="one" target="_blank"><img src="images/jefferson.jpg" class="img-fluid rounded" alt="">
+          <div class="text-light">Romance</div>
+        </a>
       </div>
-      <div class="col-md-2">
-        <div class="thumbnail">
-          <a ref="categories/hiphop.html" class="one" target="_blank"><img src="images/freestocks.jpg" alt=""
-              height="200" width="170">
-            <div class="caption2">Hip Hop</div>
-          </a>
-        </div>
+      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+        <a ref="categories/hiphop.html" class="one" target="_blank"><img src="images/marcus-neto-gioH4gHo0-g-unsplash.jpg" class="img-fluid rounded" alt="">
+          <div class="text-light">Hip Hop</div>
+        </a>
       </div>
-      <div class="col-md-2">
-        <div class="thumbnail">
-          <a ref="categories/punjabi.html" class="one" target="_blank"><img
-              src="images/josh-sorenson-MjIMc6uhwrE-unsplash.jpg" alt="" style="width: 100">
-            <div class="caption2">Punjabi</div>
-          </a>
-        </div>
+      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+        <a ref="categories/punjabi.html" class="one" target="_blank"><img src="images/josh-sorenson-MjIMc6uhwrE-unsplash.jpg" class="img-fluid rounded" alt="">
+          <div class="text-white">Punjabi</div>
+        </a>
       </div>
-      <div class="col-md-2">
-        <div class="thumbnail">
-          <a ref="categories/sleep.html" class="one" target="_blank"><img
-              src="images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg" alt="" style="width: 100">
-            <div class="caption2">Sleep</div>
-          </a>
-        </div>
+      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+        <a ref="categories/sleep.html" class="one" target="_blank"><img src="images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg" class="img-fluid rounded" alt="">
+          <div class="text-light">Sleep</div>
+        </a>
       </div>
-      <div class="col-md-2">
-        <div class="thumbnail">
-          <a ref="categories/heartbreak.html" class="one" target="_blank"> <img
-              src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg" alt="">
-            <div class="caption2">Heart Break</div>
-          </a>
-        </div>
+      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+        <a ref="categories/heartbreak.html" class="one" target="_blank"> <img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg" class="img-fluid rounded" alt="">
+          <div class="text-light">Heart Break</div>
+        </a>
       </div>
     </div>
   </div>
-  <h1 class="caption">On Repeat Mode</h1>
 
+  <p class="caption">On Repeat Mode</p>
   <div class="sks example image">
     <table class="table">
       <tr>
-        <th><a href="song1.html" target="_blank" class="one"><img src="images/luka-chuppi.jpg">
+        <th><a href="onsong1.html" target="_blank" class="one"><img src="images/luka-chuppi.jpg">
             <figcaption>Duniya</figcaption>
           </a></th>
         <th><a href="song2.html" target="_blank" class="one"><img src="images/download.jfif">
@@ -157,12 +139,7 @@
     </table>
   </div>
 
-  <p class="caption">
-
-    New Songs
-
-  </p>
-
+  <p class="caption">New Songs</p>
   <div class="sks example image">
     <table class="table">
 
@@ -220,20 +197,12 @@
             <figcaption>Bewafa</figcaption>
         </th>
       </tr>
-      </figure>
     </table>
   </div>
 
-
-  <p class="caption">
-
-    90's Retro
-
-  </p>
-
+  <p class="caption">90's Retro</p>
   <div class="sks example image">
     <table class="table">
-
       <tr>
         <th><a href="#" class="one"><img src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg">
             <figcaption>Pyaar hua</figcaption>
@@ -283,26 +252,24 @@
         <th><a href="#" class="one"><img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg">
             <figcaption>Raghupati Raghav</figcaption>
         </th>
-
       </tr>
-      </figure>
     </table>
   </div>
-  <center>
-    <ol>
-      <li><a href="https://www.facebook.com/AR.adrs.2024 active"><i class="fa fa-facebook-official"></i></a></li>
-      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-    </ol>
-    <div class="footer">
-      <!--<a href="#" class="footerlink">About Us</a>-->
-      <a href="#" class="footerlink" target="_blank">Advertise With Us</a>
+  <hr style="background-color: white; width: 97%;">
+  <div class="text-center">
+    <div class="d-inline mx-3"><a href="https://www.facebook.com/AR.adrs.2024 active"><i class="fa fa-facebook-official fa-lg"></i></a></div>
+    <div class="d-inline mx-3"><a href="#"><i class="fa fa-twitter fa-lg"></i></a></div>
+    <div class="d-inline mx-3"><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></div>
+    <div class="d-inline mx-3"><a href="#"><i class="fa fa-google-plus fa-lg"></i></a></div>
+    <div class="mb-1 mt-3">
+      <a href="#" class="footerlink">About Us</a>
       <a href="contactus.html" class="footerlink" target="_blank">Contact Us</a>
-      <a href="#" class="footerlink" target="_blank">Products</a>
     </div>
-  </center>
-
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script async defer src="js/search.js"></script>
 </body>
 
 </html>
