@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>Home</title>
+  <title>HOME</title>
+  <link rel="shortcut icon" href="images/audio-player.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,11 +17,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
-<body class="example" id="kk">
-  <div class="container-fluid">
+<body class="scrollbar" id="body">
+  <div class="container-fluid mb-4">
     <div class="topnav" style="background-color:#010317;border-bottom: 0.5px solid white;">
       <a class="active"><span style="font-family:Aldrich; color: red; font-size: 35px;">MUSIC</span>&nbsp;
-        <span style="font-family:Comic Sans MS, cursive, sans-serif; font-size: 50px;color: white; font-weight: lighter;">Dil chahe</span>
+        <span style="font-family:Comic Sans MS, cursive, sans-serif; font-size: 50px;color: white; font-weight: lighter;">Dil chahe 3.0</span>
       </a>
       <div class="search-container">
         <div>
@@ -32,36 +33,36 @@
 
   <p class="caption">Categories</p>
 
-  <div class="container-fluid mb-2">
+  <div class="container-fluid mb-3">
     <div class="row">
       <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a href="categories/party.html" target="_blank" class="one">
-          <img src="images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg" class="img-fluid rounded" alt="">
+        <a href="categories/party.html" target="_blank">
+          <img src="images/anthony-unsplash.jpg" class="img-fluid rounded" alt="">
           <div class="text-light">Party</div>
         </a>
       </div>
       <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a ref="categories/romance.html" class="one" target="_blank"><img src="images/jefferson.jpg" class="img-fluid rounded" alt="">
+        <a ref="categories/romance.html" target="_blank"><img src="images/jefferson.jpg" class="img-fluid rounded" alt="">
           <div class="text-light">Romance</div>
         </a>
       </div>
       <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a ref="categories/hiphop.html" class="one" target="_blank"><img src="images/marcus-neto-gioH4gHo0-g-unsplash.jpg" class="img-fluid rounded" alt="">
+        <a ref="categories/hiphop.html" target="_blank"><img src="images/marcus-neto-gioH4gHo0-g-unsplash.jpg" class="img-fluid rounded" alt="">
           <div class="text-light">Hip Hop</div>
         </a>
       </div>
       <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a ref="categories/punjabi.html" class="one" target="_blank"><img src="images/josh-sorenson-MjIMc6uhwrE-unsplash.jpg" class="img-fluid rounded" alt="">
-          <div class="text-white">Punjabi</div>
+        <a ref="categories/punjabi.html" target="_blank"><img src="images/josh-sorenson-MjIMc6uhwrE-unsplash.jpg" class="img-fluid rounded" alt="">
+          <div class="text-light">Punjabi</div>
         </a>
       </div>
       <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a ref="categories/sleep.html" class="one" target="_blank"><img src="images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg" class="img-fluid rounded" alt="">
+        <a ref="categories/sleep.html" target="_blank"><img src="images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg" class="img-fluid rounded" alt="">
           <div class="text-light">Sleep</div>
         </a>
       </div>
       <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a ref="categories/heartbreak.html" class="one" target="_blank"> <img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg" class="img-fluid rounded" alt="">
+        <a ref="categories/heartbreak.html" target="_blank"> <img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg" class="img-fluid rounded" alt="">
           <div class="text-light">Heart Break</div>
         </a>
       </div>
@@ -69,70 +70,70 @@
   </div>
 
   <p class="caption">On Repeat Mode</p>
-  <div class="sks example image">
+  <div class="scrollbar image">
     <table class="table">
       <tr>
-        <th><a href="onsong1.html" target="_blank" class="one"><img src="images/luka-chuppi.jpg">
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',0)"><img src="images/luka-chuppi.jpg">
             <figcaption>Duniya</figcaption>
           </a></th>
-        <th><a href="song2.html" target="_blank" class="one"><img src="images/download.jfif">
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',1)"><img src="images/download.jfif">
             <figcaption>Con Calma</figcaption>
         </th>
-        <th><a href="song3.html" target="_blank" class="one"><img src="images/galatbaat.jpg">
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',2)"><img src="images/galatbaat.jpg">
             <figcaption>Galat Baat Hai</figcaption>
           </a></th>
-        <th><a href="song4.html" target="_blank" class="one"><img src="images/billionera.jpg">
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',11)"><img src="images/billionera.jpg">
             <figcaption>Billionera </figcaption>
         </th>
-        <th><a href="song5.html" target="_blank" class="one"><img src="images/loved.jpg">
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',13)"><img src="images/loved.jpg">
             <figcaption>Love Dose</figcaption>
         </th>
-        <th><a href="song6.html" class="one"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',5)"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
             <figcaption>Kabhi Jo Badal(Female)</figcaption>
         </th>
-        <th><a href="#" target="_blank" class="one"><img src="images/oscar-keys-ojVMh1QTVGY-unsplash.jpg">
-            <figcaption>Odhani Ude Ude</figcaption>
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',7)"><img src="images/oscar-keys-ojVMh1QTVGY-unsplash.jpg">
+            <figcaption>Sheher Ki Ladki</figcaption>
         </th>
-        <th><a href="#" target="_blank" class="one"><img src="images/spen.jpg">
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',1)"><img src="images/spen.jpg">
             <figcaption>Satisfya</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
-            <figcaption>Yaad piya ki</figcaption>
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',12)"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
+            <figcaption>I can't get enough</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
-            <figcaption>Intezar</figcaption>
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',5)"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
+            <figcaption>Paagal</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
-            <figcaption>Walla Walla</figcaption>
+        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',14)"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
+            <figcaption>Lazy Lamhe</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg">
+        <th><a href="#"><img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg">
             <figcaption>Raghupati Raghav</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/marcus-neto-gioH4gHo0-g-unsplash.jpg">
+        <th><a href="#"><img src="images/marcus-neto-gioH4gHo0-g-unsplash.jpg">
             <figcaption>Ruka hoon</figcaption>
         </th>
-        <th class="gap"><a href="#" class="one"><img src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg">
+        <th><a href="#"><img src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg">
             <figcaption>Pyaar hua</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/elice-moore-E--AUpYXbjM-unsplash.jpg">
+        <th><a href="#"><img src="images/elice-moore-E--AUpYXbjM-unsplash.jpg">
             <figcaption>Uden jab Zulfen</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/clem-onojeghuo-fxt2d5Dqifk-unsplash.jpg">
+        <th><a href="#"><img src="images/clem-onojeghuo-fxt2d5Dqifk-unsplash.jpg">
             <figcaption>Besharam</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg">
+        <th><a href="#"><img src="images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg">
             <figcaption>Aaiye Meharban</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/alphacolor-66JMudIjDTw-unsplash.jpg">
+        <th><a href="#"><img src="images/alphacolor-66JMudIjDTw-unsplash.jpg">
             <figcaption>kis ki Muskuraton pe</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/42-north--G50vpGzaes-unsplash.jpg">
+        <th><a href="#"><img src="images/42-north--G50vpGzaes-unsplash.jpg">
             <figcaption>Baby</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
+        <th><a href="#"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
             <figcaption>Na Na Na Na</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/spen.jpg">
+        <th><a href="#"><img src="images/spen.jpg">
             <figcaption>Bewafa</figcaption>
         </th>
       </tr>
@@ -140,60 +141,59 @@
   </div>
 
   <p class="caption">New Songs</p>
-  <div class="sks example image">
+  <div class="scrollbar image">
     <table class="table">
 
       <tr>
-        <th><a href="#" class="one"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
+        <th><a href="#"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
             <figcaption>Yaad piya ki</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
+        <th><a href="#"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
             <figcaption>Intezar</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
+        <th><a href="#"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
             <figcaption>Walla Walla</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg">
+        <th><a href="#"><img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg">
             <figcaption>Raghupati Raghav</figcaption>
         </th>
-
-        <th><a href="#" class="one"><img src="images/marcus-neto-gioH4gHo0-g-unsplash.jpg">
+        <th><a href="#"><img src="images/marcus-neto-gioH4gHo0-g-unsplash.jpg">
             <figcaption>Ruka hoon</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg">
+        <th><a href="#"><img src="images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg">
             <figcaption>Upar niche</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/josh-sorenson-MjIMc6uhwrE-unsplash.jpg">
+        <th><a href="#"><img src="images/josh-sorenson-MjIMc6uhwrE-unsplash.jpg">
             <figcaption>Habibi ke nai</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg">
+        <th><a href="#"><img src="images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg">
             <figcaption>Humein bharat</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/israel-palacio-Y20JJ_ddy9M-unsplash.jpg">
+        <th><a href="#"><img src="images/israel-palacio-Y20JJ_ddy9M-unsplash.jpg">
             <figcaption>Move-Raftaar </figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg">
+        <th><a href="#"><img src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg">
             <figcaption>Pyaar hua</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/elice-moore-E--AUpYXbjM-unsplash.jpg">
+        <th><a href="#"><img src="images/elice-moore-E--AUpYXbjM-unsplash.jpg">
             <figcaption>Uden jab Zulfen</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/clem-onojeghuo-fxt2d5Dqifk-unsplash.jpg">
+        <th><a href="#"><img src="images/clem-onojeghuo-fxt2d5Dqifk-unsplash.jpg">
             <figcaption>Besharam</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg">
+        <th><a href="#"><img src="images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg">
             <figcaption>Aaiye Meharban</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/alphacolor-66JMudIjDTw-unsplash.jpg">
+        <th><a href="#"><img src="images/alphacolor-66JMudIjDTw-unsplash.jpg">
             <figcaption>kis ki Muskuraton pe</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/42-north--G50vpGzaes-unsplash.jpg">
+        <th><a href="#"><img src="images/42-north--G50vpGzaes-unsplash.jpg">
             <figcaption>Baby</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
+        <th><a href="#"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
             <figcaption>Na Na Na Na</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/spen.jpg">
+        <th><a href="#"><img src="images/spen.jpg">
             <figcaption>Bewafa</figcaption>
         </th>
       </tr>
@@ -201,55 +201,55 @@
   </div>
 
   <p class="caption">90's Retro</p>
-  <div class="sks example image">
+  <div class="scrollbar image">
     <table class="table">
       <tr>
-        <th><a href="#" class="one"><img src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg">
+        <th><a href="#"><img src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg">
             <figcaption>Pyaar hua</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/elice-moore-E--AUpYXbjM-unsplash.jpg">
+        <th><a href="#"><img src="images/elice-moore-E--AUpYXbjM-unsplash.jpg">
             <figcaption>Uden jab Zulfen</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/clem-onojeghuo-fxt2d5Dqifk-unsplash.jpg">
+        <th><a href="#"><img src="images/clem-onojeghuo-fxt2d5Dqifk-unsplash.jpg">
             <figcaption>Besharam</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg">
+        <th><a href="#"><img src="images/anthony-unsplash.jpg">
             <figcaption>Aaiye Meharban</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/alphacolor-66JMudIjDTw-unsplash.jpg">
+        <th><a href="#"><img src="images/alphacolor-66JMudIjDTw-unsplash.jpg">
             <figcaption>kis ki Muskuraton pe</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/42-north--G50vpGzaes-unsplash.jpg">
+        <th><a href="#"><img src="images/42-north--G50vpGzaes-unsplash.jpg">
             <figcaption>Baby</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
+        <th><a href="#"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
             <figcaption>Na Na Na Na</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/spen.jpg">
+        <th><a href="#"><img src="images/spen.jpg">
             <figcaption>Bewafa</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/sergio.jpg">
+        <th><a href="#"><img src="images/sergio.jpg">
             <figcaption>Kajal</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
+        <th><a href="#"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
             <figcaption>Illegal Weapon</figcaption>
         </th>
-        <th><a href="#" target="_blank" class="one"><img src="images/oscar-keys-ojVMh1QTVGY-unsplash.jpg">
+        <th><a href="#"><img src="images/oscar-keys-ojVMh1QTVGY-unsplash.jpg">
             <figcaption>Odhani Ude Ude</figcaption>
         </th>
-        <th><a href="#" target="_blank" class="one"><img src="images/spen.jpg">
+        <th><a href="#"><img src="images/spen.jpg">
             <figcaption>Satisfya</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
+        <th><a href="#"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
             <figcaption>Yaad piya ki</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
+        <th><a href="#"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
             <figcaption>Intezar</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
+        <th><a href="#"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
             <figcaption>Walla Walla</figcaption>
         </th>
-        <th><a href="#" class="one"><img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg">
+        <th><a href="#"><img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg">
             <figcaption>Raghupati Raghav</figcaption>
         </th>
       </tr>
@@ -257,13 +257,13 @@
   </div>
   <hr style="background-color: white; width: 97%;">
   <div class="text-center">
-    <div class="d-inline mx-3"><a href="https://www.facebook.com/AR.adrs.2024 active"><i class="fa fa-facebook-official fa-lg"></i></a></div>
+    <div class="d-inline mx-3"><a href="#"><i class="fa fa-facebook-official fa-lg"></i></a></div>
     <div class="d-inline mx-3"><a href="#"><i class="fa fa-twitter fa-lg"></i></a></div>
     <div class="d-inline mx-3"><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></div>
     <div class="d-inline mx-3"><a href="#"><i class="fa fa-google-plus fa-lg"></i></a></div>
     <div class="mb-1 mt-3">
       <a href="#" class="footerlink">About Us</a>
-      <a href="contactus.html" class="footerlink" target="_blank">Contact Us</a>
+      <a href="contactus.html" class="footerlink">Contact Us</a>
     </div>
   </div>
   <script src="js/jquery.min.js"></script>

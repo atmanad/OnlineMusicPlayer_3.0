@@ -1,8 +1,14 @@
 body {
-  background-color:#010317;
+  background-color: #010317;
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
 }
+
+html {
+  overflow: -moz-scrollbars-none;
+}
+
 .xyz {
   background: #d33a1a;
 }
@@ -17,46 +23,37 @@ body {
   height: 50px;
 }
 
-.sks {
+/* .sks {
   overflow-y: hidden;
-}
+} */
 
-.mkc {
+/* .mkc {
   width: max-content;
   height: 50px;
   white-space: nowrap;
   background: black;
-}
+} */
 
-a.one:link {
+table th a {
   font-family: 'Source Code Pro', monospace;
   color: white;
-  text-decoration: none;
 }
 
-a.one:visited {
-  text-decoration: none;
-  color: white;
-}
-
-a.one:hover {
+table th a:hover {
   color: blue;
   text-decoration: none;
 }
 
-.example {
+.scrollbar {
   overflow-y: scroll;
   overflow-x: scroll;
   /* Add the ability to scroll */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.example::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar {
   display: none;
-}
-
-.gap {
-  padding: 30px;
-  height: 100;
 }
 
 .caption {
@@ -90,7 +87,7 @@ a.one:hover {
   margin-top: 25px;
   font-size: 17px;
   margin-right: 55px;
-  float:right;
+  float: right;
 }
 
 .topnav .search-container button {
@@ -110,27 +107,47 @@ a.footerlink:link {
   font-weight: 200;
   margin-right: 40px;
 }
+
 a.footerlink:visited {
   color: white;
   text-decoration: none;
 }
+
 th {
   border: 0.1px solid white;
 }
-.table{
+
+.table {
   border-collapse: separate;
   border-spacing: 10px;
-  margin-bottom: 40px;
-}
-.fa{
-color: white;
 }
 
-.image img{
+.fa {
+  color: white;
+}
+
+.image img {
   height: 150px;
   width: 150px;
 }
-.table:hover{
+
+.table:hover {
   overflow-y: hidden;
   overflow-x: scroll;
+}
+
+@media only screen and (max-width:825px) and (min-width:411px) {
+  #search {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width:705px) {
+  #search {
+    margin: auto;
+    float: none;
+  }
+  .topnav {
+    text-align: center;
+  }
 }
