@@ -1,59 +1,74 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 body {
   background-color: #010317;
   margin: 0;
   padding: 0;
-  scrollbar-width: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
 }
 
-html {
-  overflow: -moz-scrollbars-none;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.xyz {
-  background: #d33a1a;
+table th:hover {
+  transition: box-shadow 300ms;
+  box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.2);
 }
 
-.myclass {
-  width: 600px;
-  height: 600px;
-}
-
-.bkc {
-  width: 100px;
-  height: 50px;
-}
-
-/* .sks {
-  overflow-y: hidden;
-} */
-
-/* .mkc {
-  width: max-content;
-  height: 50px;
-  white-space: nowrap;
-  background: black;
-} */
-
-table th a {
-  font-family: 'Source Code Pro', monospace;
+table a{
   color: white;
+  letter-spacing: 1px;
 }
 
-table th a:hover {
-  color: blue;
+table a:hover {
+  color: white;
   text-decoration: none;
 }
 
-.scrollbar {
-  overflow-y: scroll;
-  overflow-x: scroll;
-  /* Add the ability to scroll */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+.image img {
+  width: 163px;
+  height: 109px;
+  border-radius: 5px;
 }
 
-.scrollbar::-webkit-scrollbar {
-  display: none;
+table th {
+  border: 0.1px solid #515475;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+}
+
+.scrollbar {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 20px;
+  margin: 0;
 }
 
 .caption {
@@ -61,6 +76,10 @@ table th a:hover {
   font-size: 35px;
   padding-left: 20px;
   color: white;
+}
+
+p.caption {
+  margin: 0;
 }
 
 .topnav {
@@ -99,41 +118,27 @@ table th a:hover {
   cursor: pointer;
 }
 
-a.footerlink:link {
+.footer-link{
   color: white;
-  font-family: 'Source Code Pro', monospace;
+  font-family: monospace;
   text-decoration: none;
   font-size: 20px;
   font-weight: 200;
   margin-right: 40px;
+  display: inline-block;
 }
 
-a.footerlink:visited {
+a.footer-link:visited {
   color: white;
   text-decoration: none;
 }
 
-th {
-  border: 0.1px solid white;
-}
-
-.table {
-  border-collapse: separate;
-  border-spacing: 10px;
-}
-
-.fa {
+.fab {
   color: white;
 }
 
-.image img {
-  height: 150px;
-  width: 150px;
-}
-
-.table:hover {
-  overflow-y: hidden;
-  overflow-x: scroll;
+.fab:hover {
+  opacity: 0.7;
 }
 
 @media only screen and (max-width:825px) and (min-width:411px) {

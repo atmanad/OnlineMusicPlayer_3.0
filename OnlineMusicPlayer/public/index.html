@@ -2,23 +2,25 @@
 <html lang="en">
 
 <head>
-  <title>HOME</title>
-  <link rel="shortcut icon" href="images/audio-player.png">
+  <title>MUSIC DIL CHAHE 3.0</title>
+  <link rel="shortcut icon" href="images/icon-128x128.png">
+  <link rel="apple-touch-icon" href="images/icon-128x128.png">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <!-- for site ownership in google search console -->
+  <meta name="google-site-verification" content="p_HPVuZ2XopP_fW7A_-Sv3Gw9mMuKiQl_ZaJL_xNcYY" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is an Online Music Player. Earphone in, play the music, forget the world." />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#010317">
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
-  <!--google fonts-->
-  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
-<body class="scrollbar" id="body">
-  <div class="container-fluid mb-4">
+<body id="body">
+  <nav class="container-fluid mb-4">
     <div class="topnav" style="background-color:#010317;border-bottom: 0.5px solid white;">
       <a class="active"><span style="font-family:Aldrich; color: red; font-size: 35px;">MUSIC</span>&nbsp;
         <span style="font-family:Comic Sans MS, cursive, sans-serif; font-size: 50px;color: white; font-weight: lighter;">Dil chahe 3.0</span>
@@ -29,247 +31,241 @@
         </div>
       </div>
     </div>
-  </div>
+  </nav>
 
   <p class="caption">Categories</p>
-
-  <div class="container-fluid mb-3">
+  <div class="container-fluid my-3">
     <div class="row">
-      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a href="categories/party.html" target="_blank">
-          <img src="images/anthony-unsplash.jpg" class="img-fluid rounded" alt="">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="categories/party.html"><img src="images/pexels-freestock.jpg" class="img-fluid rounded" alt="thumbnail">
           <div class="text-light">Party</div>
         </a>
       </div>
-      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a ref="categories/romance.html" target="_blank"><img src="images/jefferson.jpg" class="img-fluid rounded" alt="">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="#"><img src="images/pexels-thibault.jpg" class="img-fluid rounded" alt="thumbnail">
           <div class="text-light">Romance</div>
         </a>
       </div>
-      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a ref="categories/hiphop.html" target="_blank"><img src="images/marcus-neto-gioH4gHo0-g-unsplash.jpg" class="img-fluid rounded" alt="">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="#"><img src="images/pexels-josh.jpg" class="img-fluid rounded" alt="thumbnail">
           <div class="text-light">Hip Hop</div>
         </a>
       </div>
-      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a ref="categories/punjabi.html" target="_blank"><img src="images/josh-sorenson-MjIMc6uhwrE-unsplash.jpg" class="img-fluid rounded" alt="">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="#"><img src="images/pexels-luis-quintero.jpg" class="img-fluid rounded" alt="thumbnail">
           <div class="text-light">Punjabi</div>
         </a>
       </div>
-      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a ref="categories/sleep.html" target="_blank"><img src="images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg" class="img-fluid rounded" alt="">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="#"><img src="images/pexels-breakingpi.jpg" class="img-fluid rounded" alt="thumbnail">
           <div class="text-light">Sleep</div>
         </a>
       </div>
-      <div class="col-6 col-sm-4 col-md-4 col-lg-2">
-        <a ref="categories/heartbreak.html" target="_blank"> <img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg" class="img-fluid rounded" alt="">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="#"><img src="images/pexels-sebastian.jpg" class="img-fluid rounded" alt="thumbnail">
           <div class="text-light">Heart Break</div>
         </a>
       </div>
     </div>
   </div>
 
-  <p class="caption">On Repeat Mode</p>
+  <p class="caption mt-3">On Repeat Mode</p>
   <div class="scrollbar image">
     <table class="table">
       <tr>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',0)"><img src="images/luka-chuppi.jpg">
+        <th id="0"><a href="musicplayer.html"><img src="images/luka-chuppi.jpg" alt="thumbnail">
             <figcaption>Duniya</figcaption>
-          </a></th>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',1)"><img src="images/download.jfif">
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="1"><a href="musicplayer.html"><img src="images/download.jpg" alt="thumbnail">
             <figcaption>Con Calma</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
         </th>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',2)"><img src="images/galatbaat.jpg">
+        <th id="2"><a href="musicplayer.html"><img src="images/galatbaat.jpg" alt="thumbnail">
             <figcaption>Galat Baat Hai</figcaption>
-          </a></th>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',11)"><img src="images/billionera.jpg">
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="11"><a href="musicplayer.html"><img src="images/billionera.jpg" alt="thumbnail">
             <figcaption>Billionera </figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
         </th>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',13)"><img src="images/loved.jpg">
+        <th id="13"><a href="musicplayer.html"><img src="images/loved.jpg" alt="thumbnail">
             <figcaption>Love Dose</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
         </th>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',5)"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
-            <figcaption>Kabhi Jo Badal(Female)</figcaption>
+        <th id="3"><a href="musicplayer.html"><img src="images/pexels-dariusz.jpg" alt="thumbnail">
+            <figcaption>Kabhi Jo Badal(F)</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
         </th>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',7)"><img src="images/oscar-keys-ojVMh1QTVGY-unsplash.jpg">
+        <th id="7"><a href="musicplayer.html"><img src="images/seherkiladki.jpg" alt="thumbnail">
             <figcaption>Sheher Ki Ladki</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
         </th>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',1)"><img src="images/spen.jpg">
-            <figcaption>Satisfya</figcaption>
+        <th id="4"><a href="musicplayer.html"><img src="images/pexels-kaboompic.jpg" alt="thumbnail">
+            <figcaption>O Saki Saki</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
         </th>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',12)"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
+        <th id="12"><a href="musicplayer.html"><img src="images/pexels-hendr.jpg" alt="thumbnail">
             <figcaption>I can't get enough</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
         </th>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',5)"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
+        <th id="5"><a href="musicplayer.html"><img src="images/pexels-stev.jpg" alt="thumbnail">
             <figcaption>Paagal</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
         </th>
-        <th><a href="musicplayer.html" onclick="sessionStorage.setItem('id',14)"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
+      </tr>
+    </table>
+  </div>
+
+  <p class="caption mt-3">New Songs</p>
+  <div class="scrollbar image">
+    <table class="table">
+      <tr>
+        <th id="6"><a href="musicplayer.html"><img src="images/pexels-keit.jpg" alt="thumbnail">
+            <figcaption>Psycho Saiyan</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="9"><a href="musicplayer.html"><img src="images/pexels-hendr.jpg" alt="thumbnail">
+            <figcaption>Kabhi Jo Badal(M)</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="10"><a href="musicplayer.html"><img src="images/pexels-pixab.jpg" alt="thumbnail">
+            <figcaption>Side To Side-Ariana</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="15"><a href="musicplayer.html"><img src="images/pexels-hasan.jpg" alt="thumbnail">
+            <figcaption>Tere Mohalle</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="16"><a href="musicplayer.html"><img src="images/pexels-stev.jpg" alt="thumbnail">
+            <figcaption>Daru Badnaam</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="28"><a href="musicplayer.html"><img src="images/pexels-thibault.jpg" alt="thumbnail">
+            <figcaption>Shape of You</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="19"><a href="musicplayer.html"><img src="images/pexels-wend.jpg" alt="thumbnail">
+            <figcaption>Dil Mein Baji Guitar</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="20"><a href="musicplayer.html"><img src="images/pexels-hasan.jpg" alt="thumbnail">
+            <figcaption>Bom Diggy</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="18"><a href="musicplayer.html"><img src="images/pexels-rahu.jpg" alt="thumbnail">
+            <figcaption>Odhani_Tapori Mix</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="29"><a href="musicplayer.html"><img src="images/pexels-stev.jpg" alt="thumbnail">
+            <figcaption>Palat - Tera Hero Idhar</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <p class="caption mt-3">Remix Adda</p>
+  <div class="scrollbar image">
+    <table class="table">
+      <tr>
+        <th id="17"><a href="musicplayer.html"><img src="images/pexels-pixab.jpg" alt="thumbnail">
+            <figcaption>Slow Motion</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="22"><a href="musicplayer.html"><img src="images/pexels-stev.jpg" alt="thumbnail">
+            <figcaption>First Class</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="8"><a href="musicplayer.html"><img src="images/pexels-pixabay.jpg" alt="thumbnail">
+            <figcaption>Shanivaar Raati</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="25"><a href="musicplayer.html"><img src="images/pexels-dariusz.jpg" alt="thumbnail">
+            <figcaption>Hauli Hauli</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="24"><a href="musicplayer.html"><img src="images/pexels-kaboompic.jpg" alt="thumbnail">
+            <figcaption>Nora Fatehi Mashup</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="23"><a href="musicplayer.html"><img src="images/pexels-rahu.jpg" alt="thumbnail">
+            <figcaption>O O Rangabati</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="27"><a href="musicplayer.html"><img src="images/pexels-rahul.jpg" alt="thumbnail">
+            <figcaption>Zaroori Tha</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="26"><a href="musicplayer.html"><img src="images/pexels-stev.jpg" alt="thumbnail">
+            <figcaption>Tum hi ho</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="21"><a href="musicplayer.html"><img src="images/pexels-wend.jpg" alt="thumbnail">
+            <figcaption>Tamma Tamma</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
+        </th>
+        <th id="14"><a href="musicplayer.html"><img src="images/pexels-dariusz.jpg" alt="thumbnail">
             <figcaption>Lazy Lamhe</figcaption>
-        </th>
-        <th><a href="#"><img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg">
-            <figcaption>Raghupati Raghav</figcaption>
-        </th>
-        <th><a href="#"><img src="images/marcus-neto-gioH4gHo0-g-unsplash.jpg">
-            <figcaption>Ruka hoon</figcaption>
-        </th>
-        <th><a href="#"><img src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg">
-            <figcaption>Pyaar hua</figcaption>
-        </th>
-        <th><a href="#"><img src="images/elice-moore-E--AUpYXbjM-unsplash.jpg">
-            <figcaption>Uden jab Zulfen</figcaption>
-        </th>
-        <th><a href="#"><img src="images/clem-onojeghuo-fxt2d5Dqifk-unsplash.jpg">
-            <figcaption>Besharam</figcaption>
-        </th>
-        <th><a href="#"><img src="images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg">
-            <figcaption>Aaiye Meharban</figcaption>
-        </th>
-        <th><a href="#"><img src="images/alphacolor-66JMudIjDTw-unsplash.jpg">
-            <figcaption>kis ki Muskuraton pe</figcaption>
-        </th>
-        <th><a href="#"><img src="images/42-north--G50vpGzaes-unsplash.jpg">
-            <figcaption>Baby</figcaption>
-        </th>
-        <th><a href="#"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
-            <figcaption>Na Na Na Na</figcaption>
-        </th>
-        <th><a href="#"><img src="images/spen.jpg">
-            <figcaption>Bewafa</figcaption>
-        </th>
-      </tr>
-    </table>
-  </div>
-
-  <p class="caption">New Songs</p>
-  <div class="scrollbar image">
-    <table class="table">
-
-      <tr>
-        <th><a href="#"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
-            <figcaption>Yaad piya ki</figcaption>
-        </th>
-        <th><a href="#"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
-            <figcaption>Intezar</figcaption>
-        </th>
-        <th><a href="#"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
-            <figcaption>Walla Walla</figcaption>
-        </th>
-        <th><a href="#"><img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg">
-            <figcaption>Raghupati Raghav</figcaption>
-        </th>
-        <th><a href="#"><img src="images/marcus-neto-gioH4gHo0-g-unsplash.jpg">
-            <figcaption>Ruka hoon</figcaption>
-        </th>
-        <th><a href="#"><img src="images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg">
-            <figcaption>Upar niche</figcaption>
-        </th>
-        <th><a href="#"><img src="images/josh-sorenson-MjIMc6uhwrE-unsplash.jpg">
-            <figcaption>Habibi ke nai</figcaption>
-        </th>
-        <th><a href="#"><img src="images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg">
-            <figcaption>Humein bharat</figcaption>
-        </th>
-        <th><a href="#"><img src="images/israel-palacio-Y20JJ_ddy9M-unsplash.jpg">
-            <figcaption>Move-Raftaar </figcaption>
-        </th>
-        <th><a href="#"><img src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg">
-            <figcaption>Pyaar hua</figcaption>
-        </th>
-        <th><a href="#"><img src="images/elice-moore-E--AUpYXbjM-unsplash.jpg">
-            <figcaption>Uden jab Zulfen</figcaption>
-        </th>
-        <th><a href="#"><img src="images/clem-onojeghuo-fxt2d5Dqifk-unsplash.jpg">
-            <figcaption>Besharam</figcaption>
-        </th>
-        <th><a href="#"><img src="images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg">
-            <figcaption>Aaiye Meharban</figcaption>
-        </th>
-        <th><a href="#"><img src="images/alphacolor-66JMudIjDTw-unsplash.jpg">
-            <figcaption>kis ki Muskuraton pe</figcaption>
-        </th>
-        <th><a href="#"><img src="images/42-north--G50vpGzaes-unsplash.jpg">
-            <figcaption>Baby</figcaption>
-        </th>
-        <th><a href="#"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
-            <figcaption>Na Na Na Na</figcaption>
-        </th>
-        <th><a href="#"><img src="images/spen.jpg">
-            <figcaption>Bewafa</figcaption>
-        </th>
-      </tr>
-    </table>
-  </div>
-
-  <p class="caption">90's Retro</p>
-  <div class="scrollbar image">
-    <table class="table">
-      <tr>
-        <th><a href="#"><img src="images/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg">
-            <figcaption>Pyaar hua</figcaption>
-        </th>
-        <th><a href="#"><img src="images/elice-moore-E--AUpYXbjM-unsplash.jpg">
-            <figcaption>Uden jab Zulfen</figcaption>
-        </th>
-        <th><a href="#"><img src="images/clem-onojeghuo-fxt2d5Dqifk-unsplash.jpg">
-            <figcaption>Besharam</figcaption>
-        </th>
-        <th><a href="#"><img src="images/anthony-unsplash.jpg">
-            <figcaption>Aaiye Meharban</figcaption>
-        </th>
-        <th><a href="#"><img src="images/alphacolor-66JMudIjDTw-unsplash.jpg">
-            <figcaption>kis ki Muskuraton pe</figcaption>
-        </th>
-        <th><a href="#"><img src="images/42-north--G50vpGzaes-unsplash.jpg">
-            <figcaption>Baby</figcaption>
-        </th>
-        <th><a href="#"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
-            <figcaption>Na Na Na Na</figcaption>
-        </th>
-        <th><a href="#"><img src="images/spen.jpg">
-            <figcaption>Bewafa</figcaption>
-        </th>
-        <th><a href="#"><img src="images/sergio.jpg">
-            <figcaption>Kajal</figcaption>
-        </th>
-        <th><a href="#"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
-            <figcaption>Illegal Weapon</figcaption>
-        </th>
-        <th><a href="#"><img src="images/oscar-keys-ojVMh1QTVGY-unsplash.jpg">
-            <figcaption>Odhani Ude Ude</figcaption>
-        </th>
-        <th><a href="#"><img src="images/spen.jpg">
-            <figcaption>Satisfya</figcaption>
-        </th>
-        <th><a href="#"><img src="images/wes-hicks-MEL-jJnm7RQ-unsplash.jpg">
-            <figcaption>Yaad piya ki</figcaption>
-        </th>
-        <th><a href="#"><img src="images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg">
-            <figcaption>Intezar</figcaption>
-        </th>
-        <th><a href="#"><img src="images/mink-mingle-HRyjETL87Gg-unsplash.jpg">
-            <figcaption>Walla Walla</figcaption>
-        </th>
-        <th><a href="#"><img src="images/matthieu-a-bXjqPckmLD8-unsplash.jpg">
-            <figcaption>Raghupati Raghav</figcaption>
+          </a>
+          <span>0</span><small>&nbsp;&nbsp;Plays</small>
         </th>
       </tr>
     </table>
   </div>
   <hr style="background-color: white; width: 97%;">
-  <div class="text-center">
-    <div class="d-inline mx-3"><a href="#"><i class="fa fa-facebook-official fa-lg"></i></a></div>
-    <div class="d-inline mx-3"><a href="#"><i class="fa fa-twitter fa-lg"></i></a></div>
-    <div class="d-inline mx-3"><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></div>
-    <div class="d-inline mx-3"><a href="#"><i class="fa fa-google-plus fa-lg"></i></a></div>
-    <div class="mb-1 mt-3">
-      <a href="#" class="footerlink">About Us</a>
-      <a href="contactus.html" class="footerlink">Contact Us</a>
+  <footer class="text-center my-4">
+    <div class="d-inline mx-3"><a href="https://www.facebook.com/atmanad.GH00ST" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></div>
+    <div class="d-inline mx-3"><a href="#"><i class="fab fa-twitter fa-lg"></i></a></div>
+    <div class="d-inline mx-3"><a href="https://www.linkedin.com/in/atman-das-525a19190/" target="_blank"><i class="fab fa-linkedin-in fa-lg" target="_blank"></i></a></div>
+    <div class="d-inline mx-3"><a href="#"><i class="fab fa-google-plus-g fa-lg"></i></a></div>
+    <div class="mt-3">
+      <a href="#" class="footer-link">About Us</a>
+      <a href="contactus.html" class="footer-link">Contact Us</a>
+      <span class="footer-link">Visitors Count: <code></code></span>
     </div>
-  </div>
+  </footer>
+<!-- bootstrap js -->
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script async defer src="js/search.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+  <script src="js/firebaseConfig.js"></script>
+  <!-- custom js -->
+  <script defer src="js/index.js"></script>
 </body>
 
 </html>

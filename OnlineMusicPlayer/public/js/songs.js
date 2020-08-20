@@ -1,8 +1,10 @@
 var currentSong = 0;
 currentSong = Number(sessionStorage.getItem("id"));
-console.log(currentSong)
-// sessionStorage.clear();
-console.log(typeof currentSong);
+var sId = sessionStorage.getItem("sId");
+var num = Number(sessionStorage.getItem("num"));
+db.collection('playTime').doc(sId).set({
+    playTime: num + 1
+}).catch(error => { console.log(error); });
 
 var songs = [
     "Duniyaa - Luka Chuppi.mp3",
@@ -20,7 +22,7 @@ var songs = [
     "I Can't Get Enough.mp3",
     "Love Dose Yo Yo Honey Singh.mp3",
     "Lazy Lamhe.mp3",
-    "Besharam - Tere Mohalle.mp3",
+    "Tere Mohalle.mp3",
     "Daru Badnaam_Remix.mp3",
     "Slow Motion_Remix.mp3",
     "Odhani_Tapori Mix.mp3",
@@ -32,7 +34,9 @@ var songs = [
     "Nora Fatehi_Mashup.mp3",
     "Hauli Hauli_Remix.mp3",
     "Tum Hi Ho.mp3",
-    "Zaroori Tha.mp3"
+    "Zaroori Tha.mp3",
+    "Shape Of You.mp3",
+    "Palat - Tera Hero Idhar.mp3"
 ];
 var songTitle = document.getElementById('songTitle');
 var songSlider = document.getElementById('songSlider');
@@ -45,7 +49,6 @@ var song = new Audio();
 window.onload = loadSong();
 
 function loadSong() {
-    console.log(currentSong);
     song.src = "../songs/" + songs[currentSong];
     songTitle.textContent = songs[currentSong];
     if (currentSong == songs.length - 1)

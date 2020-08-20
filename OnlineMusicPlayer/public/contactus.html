@@ -2,172 +2,68 @@
 <html lang="en">
 
 <head>
+    <title>HOME | CONTACT US</title>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/icon-128x128.png">
+    <link rel="apple-touch-icon" href="images/icon-128x128.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-
-    <title>ContactUs</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <style>
-        .nav1 {
+        nav{
             height: 70px;
             background-color: #06021f;
-            width: auto;
         }
 
-        .cl1 {
-            padding-top: 20px;
-            padding-left: 10px;
-        }
-
-        .cl2 {
-            padding-top: 20px;
-            padding-left: 10px;
-        }
-
-        .cl1,
-        .cl2 h3 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        h3 {
+            font-family:sans-serif;
             font-weight: 400;
         }
 
-        body {
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
-
-        .footer {
-            left: 0;
-            bottom: 0;
-            position: absolute;
-            width: 100%;
-            background-color: #06021f;
-            color: white;
-            text-align: center;
-            height: 60px;
-            padding-top: 20px;
-        }
-        .contact-form input[type="text"],
-        .contact-form textarea {
-            padding: 8px;
-            display: block;
-            width: 50%;
-            /* border: none; */
-            color: #464646;
-            font-size: 16px;
-            font-family: Arial, Helvetica, sans-serif;
-            border: 1px solid #06021f;
-            border-radius: 25px;
-        }
-
-        .btn {
+        .btn-custom {
             background-color: #06021f;
             color: white;
             border-radius: 25px;
         }
 
-        .btn:hover {
+        .btn-custom:hover {
             background-color: white;
-            border-color: #06021f;
             border: 1px solid #06021f;
             color: #06021f;
             border-radius: 25px;
-
-        }
-
-        .company_address p {
-            font-size: 16px;
-            color: #6a6a6a;
-            line-height: 1.2em;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .company_address p span {
-            text-decoration: underline;
-            color: #454545;
-            cursor: pointer;
-        }
-
-        @media screen and (max-width: 600px) {
-
-            .row.content {
-                height: auto;
-            }
-
-            footer.mb {
-                margin-top: 40px;
-            }
-        }
-
-        footer {
-            background-color: #06021f;
-            color: white;
-            padding-top: 15px;
-            margin-top: 195px;
-            font-family: 'Source Code Pro', monospace;
-            font-size: 19px;
-        }
-        body{
-            overflow: hidden;
-        }
-        input:focus{
-            outline: none;
-        }
-        .btn:focus{
-            outline: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="nav1"></div>
-    <div class="container">
+    <nav></nav>
+    <div class="container my-4">
         <div class="row">
-            <div class="col-sm-4 cl1 company_address">
+            <div class="col-12 col-sm-6">
                 <h3>Company Information :</h3>
                 <p>Ghost-Gang, Berhampur</p>
                 <p>Ganjam, Odisha, 760008</p>
                 <p>Phone:NaN</p>
                 <p>Email: <span>info@musicdilchahe.com</span></p>
             </div>
-            <div class="col-sm-8 cl2">
-                <div class="contact-form">
-                    <h3>Drop us a line:</h3>
-                    <form method="post" action="contact.html">
-                        <div style="margin-top: 15px;">
-
-                            <span><input name="userName" type="text" class="textbox" placeholder="Full Name"></span>
-                        </div>
-                        <div style="margin-top: 15px;">
-
-                            <span><input name="userEmail" type="text" class="textbox" placeholder="E-mail Id"></span>
-                        </div>
-                        <div style="margin-top: 15px;">
-                            <input name="userPhone" type="text" class="textbox" placeholder="Mobile Number">
-                        </div>
-                        <div style="margin-top: 15px;">
-
-                            <input name="userMsg" type="text" class="textbox" placeholder="Message">
-                        </div>
-
-                        <div style="margin-top: 15px;">
-                            <input type="button" class="btn" value="Send Message">
-                        </div>
-                    </form>
-
-                </div>
+            <div class="col-12 col-sm-6">
+                <h3>Drop us a line:</h3>
+                <form>
+                    <input name="userName" type="text" class="form-control mt-3" placeholder="Full Name">
+                    <input name="userEmail" type="text" class="form-control mt-3" placeholder="E-mail Id">
+                    <input name="userPhone" type="text" class="form-control mt-3" placeholder="Mobile Number">
+                    <textarea name="userMsg" type="text" class="form-control mt-3" placeholder="Message"></textarea>
+                    <button class="btn btn-custom mt-3" type="button">Send Message</button>
+                </form>
             </div>
         </div>
     </div>
-    <footer class="container-fluid text-center mb">
-        <p>&copy MUSIC Dil chahe,India 2020</p>
-    </footer>
+    <!-- bootstrap js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -22,9 +22,11 @@
   font-size: 16px;
   border: 1px solid white;
   z-index: 4;
-  box-shadow: 0 0 10px #000000;
   border-radius: 10px;
   backdrop-filter: opacity(30%);
+}
+#player-container:hover{
+  box-shadow: 3px 1px 10px white;
 }
 
 #freeSpace {
@@ -124,5 +126,10 @@
   #player-container {
     max-width: 360px;
     margin-top: 24%;
+  }
+}
+@media only screen and (max-width:400px) {
+  #player-container {
+  border: none;
   }
 }
